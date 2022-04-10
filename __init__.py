@@ -5,6 +5,8 @@ import time as t
 import os
 import numpy as np
 
+
+# try changing these values!
 # grass
 gras_grow_time = 12
 gras_mass = 5
@@ -32,9 +34,11 @@ carn_pregnancy_probability = 0.4
 carn_birth_probability = 0.95
 carn_lifespan = 100
 carn_lifespan_sigma = 3
-# logging
+# log file path, better not change (in the same directory as __init__.py)
 log_file_path = "detail.log"
 
+
+# logging system
 logfile = open(log_file_path, mode='a')
 def _log(string):
     logfile.write(string+"\n")
